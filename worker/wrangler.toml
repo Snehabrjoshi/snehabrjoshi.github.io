@@ -22,7 +22,7 @@ GOODREADS_USER_ID = "204912018"
 SPOTIFY_PLAYLIST_ID = "2ep3pk5VLPVoh6opRSkP79"
 # The site's origin (scheme + host, no path, no trailing slash), e.g.
 # "https://snehabrjoshi.github.io". Empty = only the localhost dev origins.
-SITE_ORIGIN = ""
+SITE_ORIGIN = "https://snehabrjoshi.github.io"
 
 # Secrets (never in this file): SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET,
 # SPOTIFY_REFRESH_TOKEN. Deployed: `npx wrangler secret put <NAME>`.
