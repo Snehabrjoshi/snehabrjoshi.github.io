@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-api",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Cloudflare Worker that serves the portfolio's live Goodreads shelf and Spotify playlist.",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "wrangler dev",
+    "dev:mock": "wrangler dev --var MOCK_UPSTREAMS:1",
+    "test": "vitest run",
+    "refresh": "npm run refresh:reading && npm run refresh:playlist",
+    "refresh:reading": "wrangler kv key delete data:reading --binding CACHE --remote",
+    "refresh:playlist": "wrangler kv key delete data:playlist --binding CACHE --remote",
+    "spotify:auth": "node scripts/spotify-auth.mjs"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.12.1"
+  },
+  "devDependencies": {
+    "vitest": "^5.1.1",
+    "wrangler": "^4.166.0"
+  }
+}

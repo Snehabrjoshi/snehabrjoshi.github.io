@@ -1,0 +1,34 @@
+{
+  "id": "2ep3pk5VLPVoh6opRSkP79",
+  "total": 56,
+  "tracks": [
+    {
+      "title": "Lasso The Moon",
+      "artists": ["Ashe"],
+      "album": "The Girl Of Your Dreams",
+      "image": "covers/track-0ibJ83Ei65gTmiV0aHZg47.jpg",
+      "url": "https://open.spotify.com/track/0ibJ83Ei65gTmiV0aHZg47"
+    },
+    {
+      "title": "Satellite",
+      "artists": ["Khalid"],
+      "album": "Satellite",
+      "image": "covers/track-1G9hDB1bmxz131N9svQ8pY.jpg",
+      "url": "https://open.spotify.com/track/1G9hDB1bmxz131N9svQ8pY"
+    },
+    {
+      "title": "how do you dance?",
+      "artists": ["yung kai"],
+      "album": "stay with the ocean, i'll find you",
+      "image": "covers/track-3TFCPkwhrH1E47OoJuN4hP.jpg",
+      "url": "https://open.spotify.com/track/3TFCPkwhrH1E47OoJuN4hP"
+    },
+    {
+      "title": "Heatstroke",
+      "artists": ["Khalid"],
+      "album": "Heatstroke",
+      "image": "covers/track-1Bs8WpjQ8s2QE9jgh27fUB.jpg",
+      "url": "https://open.spotify.com/track/1Bs8WpjQ8s2QE9jgh27fUB"
+    }
+  ]
+}

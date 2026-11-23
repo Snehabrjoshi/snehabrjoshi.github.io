@@ -1,0 +1,6 @@
+# Copy to .dev.vars (git-ignored) for `npx wrangler dev` and `npm run spotify:auth`.
+# The deployed Worker reads these as secrets: `npx wrangler secret put <NAME>`.
+# Never commit real values.
+SPOTIFY_CLIENT_ID=
+SPOTIFY_CLIENT_SECRET=
+SPOTIFY_REFRESH_TOKEN=

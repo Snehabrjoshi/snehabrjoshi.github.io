@@ -1,0 +1,34 @@
+{
+  "name": "sneha-joshi-portfolio",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Sneha Joshi's portfolio: a procedural 3D bookshop built with Three.js, GSAP and Vite.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "screenshots": "VITE_WEB3FORMS_KEY=screenshot-test VITE_API_BASE= npm run build && node scripts/screenshots.mjs",
+    "measure": "node scripts/measure.mjs",
+    "covers": "node scripts/fetch-covers.mjs",
+    "prebuild": "node scripts/fetch-covers.mjs && node scripts/photos.mjs",
+    "photos": "node scripts/photos.mjs",
+    "screenshots:live": "VITE_WEB3FORMS_KEY=screenshot-test VITE_API_BASE=https://api.screenshot.invalid npm run build && node scripts/live-cards.mjs",
+    "playlist:snapshot": "node scripts/playlist-snapshot.mjs",
+    "check:contrast": "node scripts/contrast.mjs",
+    "check:lighthouse": "node scripts/lighthouse.mjs",
+    "og-image": "node scripts/og-image.mjs"
+  },
+  "dependencies": {
+    "gsap": "^3.15.1",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.65.1",
+    "prettier": "^3.10.1",
+    "sharp": "^0.35.5",
+    "vite": "^6.0.0"
+  }
+}

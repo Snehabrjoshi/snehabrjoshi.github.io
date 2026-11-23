@@ -1,0 +1,40 @@
+name: Deploy portfolio to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm install
+      - run: npm run build
+        env:
+          # Repository secrets (Settings → Secrets and variables → Actions).
+          # Both are optional: without VITE_API_BASE the Reading and Playlist
+          # cards keep their build-time data; without VITE_WEB3FORMS_KEY the
+          # contact form offers the email fallback. The API worker itself is
+          # deployed by hand (`npx wrangler deploy` in worker/), not here.
+          VITE_API_BASE: ${{ secrets.VITE_API_BASE }}
+          VITE_WEB3FORMS_KEY: ${{ secrets.VITE_WEB3FORMS_KEY }}
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - uses: actions/deploy-pages@v4

@@ -1,0 +1,13 @@
+{
+  "html": "<iframe></iframe>",
+  "width": 456,
+  "height": 352,
+  "version": "1.0",
+  "provider_name": "Spotify",
+  "provider_url": "https://spotify.com",
+  "type": "rich",
+  "title": "Quiet Hours",
+  "thumbnail_url": "https://image-cdn-fa.spotifycdn.com/image/fixture-oembed-cover",
+  "thumbnail_width": 300,
+  "thumbnail_height": 300
+}

@@ -1,0 +1,402 @@
+{
+  "href": "https://api.spotify.com/v1/playlists/2ep3pk5VLPVoh6opRSkP79/items?offset=0&limit=8",
+  "limit": 8,
+  "next": "https://api.spotify.com/v1/playlists/2ep3pk5VLPVoh6opRSkP79/items?offset=8&limit=8",
+  "offset": 0,
+  "previous": null,
+  "total": 14,
+  "items": [
+    {
+      "added_at": "2026-01-10T10:00:00Z",
+      "added_by": {
+        "id": "owner",
+        "type": "user"
+      },
+      "is_local": false,
+      "item": {
+        "type": "track",
+        "name": "Clair de lune",
+        "id": "trk0000000000000000000",
+        "duration_ms": 301000,
+        "explicit": false,
+        "artists": [
+          {
+            "name": "Claude Debussy",
+            "type": "artist"
+          },
+          {
+            "name": "Pascal Rogé",
+            "type": "artist"
+          }
+        ],
+        "album": {
+          "name": "Suite bergamasque",
+          "album_type": "album",
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab67616d00000280000000000000000000000001",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000012c000000000000000000000001",
+              "height": 300,
+              "width": 300
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00000040000000000000000000000001",
+              "height": 64,
+              "width": 64
+            }
+          ]
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/trk0000000000000000000"
+        }
+      }
+    },
+    {
+      "added_at": "2026-02-11T10:00:00Z",
+      "added_by": {
+        "id": "owner",
+        "type": "user"
+      },
+      "is_local": false,
+      "item": {
+        "type": "track",
+        "name": "Gymnopédie No. 1",
+        "id": "trk0000000000000000001",
+        "duration_ms": 206000,
+        "explicit": false,
+        "artists": [
+          {
+            "name": "Erik Satie",
+            "type": "artist"
+          },
+          {
+            "name": "Jean-Yves Thibaudet",
+            "type": "artist"
+          }
+        ],
+        "album": {
+          "name": "Satie: Piano Works",
+          "album_type": "album",
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab67616d00000280000000000000000000000002",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000012c000000000000000000000002",
+              "height": 300,
+              "width": 300
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00000040000000000000000000000002",
+              "height": 64,
+              "width": 64
+            }
+          ]
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/trk0000000000000000001"
+        }
+      }
+    },
+    {
+      "added_at": "2026-03-12T10:00:00Z",
+      "added_by": {
+        "id": "owner",
+        "type": "user"
+      },
+      "is_local": false,
+      "item": {
+        "type": "track",
+        "name": "Nocturne in E-flat major, Op. 9 No. 2",
+        "id": "trk0000000000000000002",
+        "duration_ms": 271000,
+        "explicit": false,
+        "artists": [
+          {
+            "name": "Frédéric Chopin",
+            "type": "artist"
+          },
+          {
+            "name": "Maria João Pires",
+            "type": "artist"
+          }
+        ],
+        "album": {
+          "name": "Chopin: Nocturnes",
+          "album_type": "album",
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab67616d00000280000000000000000000000003",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000012c000000000000000000000003",
+              "height": 300,
+              "width": 300
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00000040000000000000000000000003",
+              "height": 64,
+              "width": 64
+            }
+          ]
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/trk0000000000000000002"
+        }
+      }
+    },
+    {
+      "added_at": "2026-04-13T10:00:00Z",
+      "added_by": {
+        "id": "owner",
+        "type": "user"
+      },
+      "is_local": false,
+      "item": {
+        "type": "track",
+        "name": "The Swan",
+        "id": "trk0000000000000000003",
+        "duration_ms": 184000,
+        "explicit": false,
+        "artists": [
+          {
+            "name": "Camille Saint-Saëns",
+            "type": "artist"
+          },
+          {
+            "name": "Yo-Yo Ma",
+            "type": "artist"
+          }
+        ],
+        "album": {
+          "name": "The Carnival of the Animals",
+          "album_type": "album",
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab67616d00000280000000000000000000000004",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000012c000000000000000000000004",
+              "height": 300,
+              "width": 300
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00000040000000000000000000000004",
+              "height": 64,
+              "width": 64
+            }
+          ]
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/trk0000000000000000003"
+        }
+      }
+    },
+    {
+      "added_at": "2026-05-14T10:00:00Z",
+      "added_by": {
+        "id": "owner",
+        "type": "user"
+      },
+      "is_local": false,
+      "item": {
+        "type": "track",
+        "name": "Arabesque No. 1",
+        "id": "trk0000000000000000004",
+        "duration_ms": 262000,
+        "explicit": false,
+        "artists": [
+          {
+            "name": "Claude Debussy",
+            "type": "artist"
+          },
+          {
+            "name": "Zoltán Kocsis",
+            "type": "artist"
+          }
+        ],
+        "album": {
+          "name": "Debussy: Préludes & Arabesques",
+          "album_type": "album",
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab67616d00000280000000000000000000000005",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000012c000000000000000000000005",
+              "height": 300,
+              "width": 300
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00000040000000000000000000000005",
+              "height": 64,
+              "width": 64
+            }
+          ]
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/trk0000000000000000004"
+        }
+      }
+    },
+    {
+      "added_at": "2026-06-15T10:00:00Z",
+      "added_by": {
+        "id": "owner",
+        "type": "user"
+      },
+      "is_local": false,
+      "item": {
+        "type": "track",
+        "name": "Air on the G String",
+        "id": "trk0000000000000000005",
+        "duration_ms": 312000,
+        "explicit": false,
+        "artists": [
+          {
+            "name": "Johann Sebastian Bach",
+            "type": "artist"
+          },
+          {
+            "name": "Academy of St Martin in the Fields",
+            "type": "artist"
+          }
+        ],
+        "album": {
+          "name": "Orchestral Suite No. 3",
+          "album_type": "album",
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab67616d00000280000000000000000000000006",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000012c000000000000000000000006",
+              "height": 300,
+              "width": 300
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00000040000000000000000000000006",
+              "height": 64,
+              "width": 64
+            }
+          ]
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/trk0000000000000000005"
+        }
+      }
+    },
+    {
+      "added_at": "2026-07-16T10:00:00Z",
+      "added_by": {
+        "id": "owner",
+        "type": "user"
+      },
+      "is_local": false,
+      "item": {
+        "type": "track",
+        "name": "Méditation",
+        "id": "trk0000000000000000006",
+        "duration_ms": 318000,
+        "explicit": false,
+        "artists": [
+          {
+            "name": "Jules Massenet",
+            "type": "artist"
+          },
+          {
+            "name": "Anne-Sophie Mutter",
+            "type": "artist"
+          }
+        ],
+        "album": {
+          "name": "Thaïs",
+          "album_type": "album",
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab67616d00000280000000000000000000000007",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000012c000000000000000000000007",
+              "height": 300,
+              "width": 300
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00000040000000000000000000000007",
+              "height": 64,
+              "width": 64
+            }
+          ]
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/trk0000000000000000006"
+        }
+      }
+    },
+    {
+      "added_at": "2026-08-17T10:00:00Z",
+      "added_by": {
+        "id": "owner",
+        "type": "user"
+      },
+      "is_local": false,
+      "item": {
+        "type": "track",
+        "name": "Pavane",
+        "id": "trk0000000000000000007",
+        "duration_ms": 389000,
+        "explicit": false,
+        "artists": [
+          {
+            "name": "Gabriel Fauré",
+            "type": "artist"
+          },
+          {
+            "name": "Orchestre du Capitole",
+            "type": "artist"
+          }
+        ],
+        "album": {
+          "name": "Fauré: Orchestral Works",
+          "album_type": "album",
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab67616d00000280000000000000000000000008",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000012c000000000000000000000008",
+              "height": 300,
+              "width": 300
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00000040000000000000000000000008",
+              "height": 64,
+              "width": 64
+            }
+          ]
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/trk0000000000000000007"
+        }
+      }
+    }
+  ]
+}

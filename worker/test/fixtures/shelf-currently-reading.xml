@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <xhtml:meta xmlns:xhtml="http://www.w3.org/1999/xhtml" name="robots" content="noindex" />
+    <title>Reader's bookshelf: currently-reading</title>
+    <copyright><![CDATA[Copyright (C) 2026 Goodreads Inc. All rights reserved.]]></copyright>
+    <link><![CDATA[https://www.goodreads.com/review/list_rss/204912018?shelf=currently-reading]]></link>
+    <atom:link href="https://www.goodreads.com/review/list_rss/204912018?shelf=currently-reading" rel="self" type="application/rss+xml"/>
+    <description><![CDATA[Reader's bookshelf: currently-reading]]></description>
+    <language><![CDATA[en-US]]></language>
+    <lastBuildDate><![CDATA[Sun, 22 Nov 2026 03:00:00 -0800]]></lastBuildDate>
+    <ttl><![CDATA[60]]></ttl>
+    <image>
+      <title>Reader's bookshelf: currently-reading</title>
+      <link><![CDATA[https://www.goodreads.com/review/list_rss/204912018?shelf=currently-reading]]></link>
+      <width>144</width>
+      <height>41</height>
+      <url>https://www.goodreads.com/images/layout/goodreads_logo_144.jpg</url>
+    </image>
+    <item>
+      <guid><![CDATA[https://www.goodreads.com/review/show/9000049127718?utm_medium=api&utm_source=rss]]></guid>
+      <pubDate><![CDATA[Mon, 10 Nov 2025 21:15:00 -0800]]></pubDate>
+      <title><![CDATA[Anxious People]]></title>
+      <link><![CDATA[https://www.goodreads.com/review/show/9000049127718?utm_medium=api&utm_source=rss]]></link>
+      <book_id>49127718</book_id>
+      <book_image_url><![CDATA[https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1572010908i/49127718._SY75_.jpg]]></book_image_url>
+      <book_small_image_url><![CDATA[https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1572010908i/49127718._SY75_.jpg]]></book_small_image_url>
+      <book_medium_image_url><![CDATA[https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1572010908i/49127718._SY75_.jpg]]></book_medium_image_url>
+      <book_large_image_url><![CDATA[https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1572010908i/49127718._SY475_.jpg]]></book_large_image_url>
+      <book_description><![CDATA[A description with <b>markup</b> &amp; entities.]]></book_description>
+      <author_name>Fredrik Backman</author_name>
+      <isbn></isbn>
+      <user_name>Reader</user_name>
+      <user_rating>0</user_rating>
+      <user_read_at><![CDATA[]]></user_read_at>
+      <user_date_added><![CDATA[Mon, 10 Nov 2025 21:15:00 -0800]]></user_date_added>
+      <user_date_created><![CDATA[Mon, 10 Nov 2025 21:15:00 -0800]]></user_date_created>
+      <user_shelves>currently-reading</user_shelves>
+      <user_review></user_review>
+      <average_rating>4.1</average_rating>
+      <book_published>2017</book_published>
+      <description><![CDATA[ ]]></description>
+    </item>
+  </channel>
+</rss>

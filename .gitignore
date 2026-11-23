@@ -1,0 +1,23 @@
+node_modules/
+dist/
+.DS_Store
+screenshots/
+
+# generated before each build (scripts/fetch-covers.mjs, scripts/photos.mjs)
+src/data/*.generated.json
+public/photos/generated/
+
+# local secrets (see .env.example)
+.env
+.env.*
+!.env.example
+
+# the API worker's local secrets and Wrangler state (also in worker/.gitignore)
+worker/.dev.vars
+worker/.dev.vars.*
+!worker/.dev.vars.example
+.wrangler/
+
+# my own pre-launch notes
+LAUNCH-CHECKLIST.md
+.claude/

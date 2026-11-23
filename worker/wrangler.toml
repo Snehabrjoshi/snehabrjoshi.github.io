@@ -1,0 +1,35 @@
+# Cloudflare Worker for the portfolio: the live Goodreads reading list and the
+# Spotify playlist, refreshed into KV by a cron and served from KV.
+# Setup, step by step: worker/README.md. Never put secrets in this file.
+name = "portfolio-api"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+workers_dev = true
+
+# Refresh both datasets every 6 hours (UTC).
+[triggers]
+crons = ["0 */6 * * *"]
+
+# KV namespace for the cached datasets and the Spotify access token
+# (`npx wrangler kv namespace create CACHE`). Free plan: one KV write per
+# dataset per refresh, well within the daily limit.
+[[kv_namespaces]]
+binding = "CACHE"
+id = "863ed17557cf4a00af0ad7de031d1a1e"
+
+[vars]
+GOODREADS_USER_ID = "204912018"
+SPOTIFY_PLAYLIST_ID = "2ep3pk5VLPVoh6opRSkP79"
+# The site's origin (scheme + host, no path, no trailing slash), e.g.
+# "https://snehabrjoshi.github.io". Empty = only the localhost dev origins.
+SITE_ORIGIN = ""
+
+# Secrets (never in this file): SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET,
+# SPOTIFY_REFRESH_TOKEN. Deployed: `npx wrangler secret put <NAME>`.
+# Local: worker/.dev.vars (git-ignored; copy .dev.vars.example).
+
+# The mock upstreams (src/mock.js) import their fixtures as text.
+[[rules]]
+type = "Text"
+globs = ["**/*.xml", "**/*.txt"]
+fallthrough = true

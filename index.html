@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Keep in step with PROFILE in src/data/portfolioData.js -->
+    <title>Sneha Joshi</title>
+    <meta
+      name="description"
+      content="Portfolio of Sneha Joshi: an interactive 3D bookshop where each book is a section."
+    />
+    <meta name="theme-color" content="#090705" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#efe7d9" media="(prefers-color-scheme: light)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sneha Joshi" />
+    <meta
+      property="og:description"
+      content="An interactive 3D bookshop: five volumes, an iced coffee and a speaker, each opening a section."
+    />
+    <meta property="og:image" content="og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Five cloth-bound volumes on a reading table at night." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sneha Joshi" />
+    <meta
+      name="twitter:description"
+      content="An interactive 3D bookshop: five volumes, an iced coffee and a speaker, each opening a section."
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script>
+      // Apply the saved mode before first paint (default: night).
+      try {
+        document.documentElement.dataset.theme =
+          localStorage.getItem('bookshop-theme') === 'day' ? 'day' : 'night';
+      } catch (e) {
+        document.documentElement.dataset.theme = 'night';
+      }
+      document.documentElement.dataset.sceneState = 'loading';
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&text=0123456789%2F%20&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#contents-list">Skip to contents</a>
+    <canvas id="webgl-canvas" aria-hidden="true"></canvas>
+    <div id="cursor-orb" aria-hidden="true"><i></i></div>
+
+    <header class="masthead">
+      <span class="monogram" aria-hidden="true">S</span>
+      <nav class="masthead-nav" aria-label="Site">
+        <button
+          class="nav-item"
+          id="contents-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="contents"
+        >
+          Contents
+        </button>
+        <a class="nav-item" id="link-resume" href="resume.pdf" hidden>Résumé (PDF)</a>
+        <a class="nav-item" id="link-github" href="#" rel="me noopener" target="_blank">GitHub</a>
+        <button
+          class="mode-toggle"
+          id="mode-toggle"
+          type="button"
+          role="switch"
+          aria-checked="false"
+          aria-label="Day mode"
+        >
+          <span class="mode-option" data-mode="night">Night</span>
+          <span class="mode-sep" aria-hidden="true">/</span>
+          <span class="mode-option" data-mode="day">Day</span>
+          <span class="mode-rule" aria-hidden="true"></span>
+        </button>
+      </nav>
+    </header>
+
+    <nav class="contents" id="contents" aria-label="Contents" hidden>
+      <ol class="contents-list" id="contents-list"></ol>
+    </nav>
+
+    <section class="hero" aria-labelledby="hero-name">
+      <h1 class="hero-name" id="hero-name">Sneha</h1>
+      <p class="hero-role" id="hero-role"></p>
+      <p class="hero-statement" id="hero-statement"></p>
+    </section>
+
+    <div
+      class="scene-targets"
+      id="scene-targets"
+      role="group"
+      aria-label="Objects on the table"
+    ></div>
+    <div class="object-tag" id="object-tag" aria-hidden="true">
+      <span class="object-tag__name"></span>
+      <span class="object-tag__blurb"></span>
+    </div>
+
+    <p class="hint" aria-hidden="true">Take a volume from the row, or open Contents.</p>
+
+    <dialog id="book-modal" class="reader" aria-labelledby="modal-title">
+      <div class="reader-bar">
+        <p class="reader-bar__section" id="reader-section"></p>
+        <button id="close-modal" class="close-button" type="button">
+          Close <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <article class="reader-spread">
+        <section class="reader-page reader-page--left">
+          <p class="reader-kicker" id="modal-volume"></p>
+          <h2 class="reader-title" id="modal-title"></h2>
+          <span class="reader-accent" aria-hidden="true"></span>
+          <p class="reader-subtitle" id="modal-subtitle"></p>
+          <p class="reader-lead" id="modal-lead"></p>
+        </section>
+        <section
+          class="reader-page reader-page--right"
+          id="modal-body"
+          tabindex="0"
+          aria-label="Section text"
+        ></section>
+        <p class="reader-folio reader-folio--left" aria-hidden="true"></p>
+        <p class="reader-folio reader-folio--right" aria-hidden="true"></p>
+      </article>
+    </dialog>
+
+    <dialog id="card" class="card" aria-labelledby="card-title">
+      <div class="card-sheet">
+        <div class="card-head">
+          <p class="card-kicker" id="card-kicker"></p>
+          <button class="close-button close-button--ink card-close" type="button">
+            Close <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <h2 class="card-title" id="card-title"></h2>
+        <p class="card-intro" id="card-intro"></p>
+        <div class="card-body" id="card-body"></div>
+      </div>
+    </dialog>
+
+    <div class="loading" id="loading-screen" aria-hidden="true">
+      <span class="monogram monogram--large">S</span>
+      <p>Opening the bookshop…</p>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
